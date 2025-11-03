@@ -87,6 +87,25 @@ input, select {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+footer {
+  background-color: #002147; /* or whatever dark color you use */
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.contact-number, .contact-email {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-number:hover,
+.contact-email:hover {
+  color: #f1f1f1;
+  text-decoration: underline;
+}
+
 
 footer {
   background: #004aad;
