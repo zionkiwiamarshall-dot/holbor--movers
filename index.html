@@ -35,24 +35,36 @@
       <li>Full Service Packaging</li>
     </ul>
   </section>
+<form action="https://api.web3forms.com/submit" method="POST">
+  <!-- Web3Forms Access Key -->
+  <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
 
-  <section id="booking">
-    <h2>Book Your Move</h2>
-    <form id="bookingForm">
-      <label for="name">Full Name</label>
-      <input type="text" id="name" name="name" required>
+  <h2>Book Your Move</h2>
 
-      <label for="phone">Phone Number</label>
-      <input type="tel" id="phone" name="phone" required>
+  <label for="name">Full Name</label>
+  <input type="text" id="name" name="name" required>
 
-      <label for="service">Select Service</label>
-      <select id="service" name="service" required>
-        <option value="">-- Select --</option>
-        <option value="residential">Residential Moving</option>
-        <option value="commercial">Commercial Moving</option>
-        <option value="office">Office Relocation</option>
-        <option value="packaging">Full Packaging</option>
-      </select>
+  <label for="phone">Phone Number</label>
+  <input type="tel" id="phone" name="phone" required>
+
+  <label for="service">Select Service</label>
+  <select id="service" name="service" required>
+    <option value="">-- Select --</option>
+    <option value="residential">Residential Moving</option>
+    <option value="commercial">Commercial Moving</option>
+    <option value="office">Office Relocation</option>
+    <option value="packaging">Full Packaging</option>
+  </select>
+
+  <label for="date">Preferred Date</label>
+  <input type="date" id="date" name="date" required>
+
+  <!-- Optional: redirect after submit -->
+  <input type="hidden" name="redirect" value="https://YOUR_USERNAME.github.io/holborn-movers/success.html">
+
+  <button type="submit" class="btn">Submit Booking</button>
+</form>
+ 
 
       <label for="date">Preferred Date</label>
       <input type="date" id="date" name="date" required>
