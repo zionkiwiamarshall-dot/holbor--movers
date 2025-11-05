@@ -242,12 +242,41 @@ footer {
 }
 
 .testimonial {
-  background: white;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  width: 300px;
+  background: #e8f3ff;
+  border-radius: 25px;
+  padding: 25px 20px;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  width: 320px;
   text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.testimonial::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50px;
+  border-width: 15px 15px 0;
+  border-style: solid;
+  border-color: #e8f3ff transparent transparent transparent;
+}
+
+.testimonial:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial p {
+  color: #333;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.testimonial h4 {
+  margin-top: 15px;
+  color: #007bff;
+  font-weight: bold;
+  text-align: right;
 }
 
 .testimonial p {
