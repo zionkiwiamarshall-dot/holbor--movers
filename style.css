@@ -322,55 +322,55 @@ footer {
   text-align: right;
   font-size: 0.9rem;
 }
-/* Counties Section */
-#counties {
+#counties-map {
+  text-align: center;
   padding: 60px 20px;
   background-color: #f9f9f9;
-  text-align: center;
 }
 
-#counties h2 {
+#counties-map h2 {
   font-size: 2.5rem;
   margin-bottom: 10px;
   color: #333;
 }
 
-#counties p {
+#counties-map p {
   color: #555;
   margin-bottom: 40px;
 }
 
-.counties-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
+.map-container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
 }
 
-.county-card {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+svg#kenya-map {
+  width: 100%;
+  height: auto;
 }
 
-.county-card span {
-  font-size: 2rem;
-  display: block;
-  margin-bottom: 10px;
+.county {
+  fill: #e0e0e0;
+  stroke: #999;
+  stroke-width: 1;
+  transition: fill 0.3s;
+  cursor: pointer;
 }
 
-.county-card h3 {
-  margin: 0;
-  font-size: 1.2rem;
-  color: #333;
+.county:hover {
+  fill: #ff6b6b;
 }
 
-.county-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+#tooltip {
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  display: none;
+  pointer-events: none;
 }
 footer {
   background: #004aad;
