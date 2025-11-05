@@ -32,11 +32,14 @@ nav a {
 }
 
 .hero {
-  background: url('moving-bg.jpg') center/cover no-repeat;
-  text-align: center;
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 50%, #00aaff 100%), 
+              url('moving-bg.jpg') center/cover no-repeat;
   color: white;
+  text-align: center;
   padding: 120px 20px;
-  background-color: #004aad;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
 }
 
 .hero h2 {
