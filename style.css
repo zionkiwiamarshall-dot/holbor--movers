@@ -169,6 +169,97 @@ footer {
   object-fit: cover;
   border-radius: 10px;
 }
+/* HERO SECTION */
+#hero {
+  background: linear-gradient(135deg, #007bff 40%, #dfe9f3 100%);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+#hero h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  margin-top: 15px;
+}
+
+#hero .book-now {
+  display: inline-block;
+  margin-top: 25px;
+  background-color: #ffffff;
+  color: #007bff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+#hero .book-now:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+/* ABOUT SECTION */
+#about {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#about p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* TESTIMONIALS SECTION */
+#testimonials {
+  background: #f8f9fa;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.testimonial-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.testimonial {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 300px;
+  text-align: left;
+}
+
+.testimonial p {
+  color: #333;
+  font-style: italic;
+}
+
+.testimonial h4 {
+  margin-top: 15px;
+  color: #007bff;
+  font-weight: bold;
+}
 
 footer {
   background: #004aad;
