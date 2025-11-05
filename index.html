@@ -120,47 +120,28 @@
   <p>Your trusted partner for stress-free moves — anywhere, anytime in Nairobi.</p>
  
 </section>
-<!-- Counties We Move To Section -->
-<section id="counties">
+<section id="counties-map">
   <h2>Counties We Move To</h2>
   <p>From Nairobi to Kisumu, Mombasa to Eldoret, we’ve got you covered!</p>
 
-  <div class="counties-grid">
-    <div class="county-card">
-      <span>📍</span>
-      <h3>Nairobi</h3>
-    </div>
-    <div class="county-card">
-      <span>📍</span>
-      <h3>Mombasa</h3>
-    </div>
-    <div class="county-card">
-      <span>📍</span>
-      <h3>Kisumu</h3>
-    </div>
-    <div class="county-card">
-      <span>📍</span>
-      <h3>Nakuru</h3>
-    </div>
-    <div class="county-card">
-      <span>📍</span>
-      <h3>Eldoret</h3>
-    </div>
-    <div class="county-card">
-      <span>📍</span>
-      <h3>Thika</h3>
-    </div>
-    <div class="county-card">
-      <span>📍</span>
-      <h3>Kakamega</h3>
-    </div>
-    <div class="county-card">
-      <span>📍</span>
-      <h3>Machakos</h3>
-    </div>
-  </div>
-</section>
+  <div class="map-container">
+    <!-- Inline SVG map of Kenya -->
+    <svg id="kenya-map" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+      <!-- Example: each county as a path with an ID -->
+      <path id="nairobi" d="M300,300 L320,300 L320,320 L300,320 Z" class="county" />
+      <path id="mombasa" d="M400,400 L420,400 L420,420 L400,420 Z" class="county" />
+      <path id="kisumu" d="M200,200 L220,200 L220,220 L200,220 Z" class="county" />
+      <path id="nakuru" d="M250,250 L270,250 L270,270 L250,270 Z" class="county" />
+      <path id="eldoret" d="M220,150 L240,150 L240,170 L220,170 Z" class="county" />
+      <path id="thika" d="M320,280 L340,280 L340,300 L320,300 Z" class="county" />
+      <path id="kakamega" d="M180,180 L200,180 L200,200 L180,200 Z" class="county" />
+      <path id="machakos" d="M350,320 L370,320 L370,340 L350,340 Z" class="county" />
+      <!-- Add more counties as needed -->
+    </svg>
 
+    <!-- Tooltip -->
+    <div id="tooltip"></div>
+  </div>
 <!-- ABOUT SECTION -->
 <section id="about">
   <h2>About Us</h2>
