@@ -169,14 +169,48 @@ footer {
   object-fit: cover;
   border-radius: 10px;
 }
-/* HERO SECTION */
 #hero {
-  background: linear-gradient(135deg, #007bff 40%, #dfe9f3 100%);
-  color: white;
+  background: linear-gradient(135deg, #0066cc 40%, #00bcd4 100%);
+  color: #fff;
   text-align: center;
-  padding: 80px 20px;
+  padding: 100px 20px;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
+#hero h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+}
+
+#hero p {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  color: #f1f1f1;
+}
+
+#hero .book-now {
+  display: inline-block;
+  margin-top: 25px;
+  background-color: #ffffff;
+  color: #0066cc;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+#hero .book-now:hover {
+  background-color: #004999;
+  color: #fff;
+  transform: scale(1.05);
+}
 #hero h1 {
   font-size: 2.8rem;
   font-weight: bold;
