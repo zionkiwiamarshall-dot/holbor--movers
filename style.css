@@ -105,7 +105,70 @@ footer {
   color: #f1f1f1;
   text-decoration: underline;
 }
+/* ===== HERO SECTION ===== */
+#hero {
+  background: url('images/hero.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+#hero .btn {
+  background-color: #ff9900;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
 
+/* ===== ABOUT ===== */
+#about {
+  text-align: center;
+  padding: 60px 20px;
+}
+#about img {
+  width: 80%;
+  max-width: 500px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* ===== SERVICES ===== */
+#services {
+  background: #f8f8f8;
+  text-align: center;
+  padding: 60px 20px;
+}
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.service-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* ===== GALLERY ===== */
+#gallery {
+  text-align: center;
+  padding: 60px 20px;
+}
+.gallery-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.gallery-grid img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
 
 footer {
   background: #004aad;
