@@ -256,23 +256,26 @@ footer {
   line-height: 1.6;
 }
 
-/* TESTIMONIALS SECTION */
+/* === TESTIMONIAL SECTION === */
 #testimonials {
-  background: #f8f9fa;
   padding: 60px 20px;
+  background: #f9fbff;
   text-align: center;
 }
 
 #testimonials h2 {
+  color: #004b8d;
   font-size: 2rem;
   margin-bottom: 40px;
+  font-weight: 700;
 }
 
-.testimonial-wrapper {
+.testimonial-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 25px;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .testimonial {
@@ -304,6 +307,7 @@ footer {
   color: #333;
   font-style: italic;
   line-height: 1.5;
+  font-size: 0.95rem;
 }
 
 .testimonial h4 {
@@ -311,17 +315,7 @@ footer {
   color: #007bff;
   font-weight: bold;
   text-align: right;
-}
-
-.testimonial p {
-  color: #333;
-  font-style: italic;
-}
-
-.testimonial h4 {
-  margin-top: 15px;
-  color: #007bff;
-  font-weight: bold;
+  font-size: 0.9rem;
 }
 
 footer {
