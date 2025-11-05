@@ -328,40 +328,77 @@ footer {
   background-color: #f9f9f9;
 }
 
-#counties-map h2 {
+#counties-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+#counties-section h2 {
   font-size: 2.5rem;
   margin-bottom: 10px;
   color: #333;
 }
 
-#counties-map p {
+#counties-section p {
   color: #555;
   margin-bottom: 40px;
 }
 
-.map-container {
-  position: relative;
-  max-width: 600px;
-  margin: 0 auto 30px auto;
+/* Grid layout */
+.counties-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-svg#kenya-map {
-  width: 100%;
-  height: auto;
+/* County card */
+.county-card {
+  background-color: var(--card-color, #fff);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  cursor: default;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: fadeUp 0.6s forwards;
 }
 
-.county {
-  fill: #e0e0e0;
-  stroke: #999;
-  stroke-width: 1;
-  transition: fill 0.3s;
-  cursor: pointer;
+/* Staggered animation delay for each card */
+.county-card:nth-child(1){animation-delay: 0.1s;}
+.county-card:nth-child(2){animation-delay: 0.2s;}
+.county-card:nth-child(3){animation-delay: 0.3s;}
+.county-card:nth-child(4){animation-delay: 0.4s;}
+.county-card:nth-child(5){animation-delay: 0.5s;}
+.county-card:nth-child(6){animation-delay: 0.6s;}
+.county-card:nth-child(7){animation-delay: 0.7s;}
+.county-card:nth-child(8){animation-delay: 0.8s;}
+
+/* Hover effect */
+.county-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.15);
 }
 
-.county:hover {
-  fill: #ff6b6b;
+/* Icon styling */
+.icon {
+  font-size: 2rem;
 }
 
+/* Fade-up animation */
+@keyframes fadeUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 #tooltip {
   position: absolute;
   background-color: #333;
